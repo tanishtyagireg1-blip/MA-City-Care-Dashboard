@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CityCare Pharmacy: AI budget forecasting dashboard</title>
+<meta name="description" content="Interactive dashboard comparing AI and traditional budget forecasts for a simulated small pharmacy.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312211d'/%3E%3Cpath d='M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <aside class="rail" aria-label="Dashboard navigation">
+    <div class="brand"><strong id="brandName">CityCare Pharmacy</strong><span>AI vs traditional budget forecasting</span></div>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <div class="rail-tools">
+      <button type="button" id="themeBtn" aria-label="Change colour theme">Theme: system</button>
+      <button type="button" id="dlBtn">Download data (CSV)</button>
+      <small id="railNote"></small>
+    </div>
+  </aside>
+  <div class="stage">
+    <div class="stage-in">
+      <div class="page-head" id="head"></div>
+      <main id="main" tabindex="-1"></main>
+      <footer class="foot" id="foot"></footer>
+    </div>
+  </div>
+</div>
+<noscript><p style="padding:20px">This dashboard needs JavaScript to draw its charts.</p></noscript>
+<script src="vendor/chart.umd.js"></script>
+<script src="js/data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/config.js"></script>
+<script src="js/s-overview.js"></script>
+<script src="js/s-data.js"></script>
+<script src="js/s-traditional.js"></script>
+<script src="js/s-ai.js"></script>
+<script src="js/s-accuracy.js"></script>
+<script src="js/s-variance.js"></script>
+<script src="js/s-lab.js"></script>
+<script src="js/s-risk.js"></script>
+<script src="js/s-learn.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
